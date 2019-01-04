@@ -1,0 +1,33 @@
+<?php ?>
+
+    <pre><?php echo print_r($_POST, true); ?></pre>
+<?php
+include("../model/dataBase.php");
+$date = date('Y-m-d');
+
+
+$test = "INSERT INTO game(date) VALUES('$date');";
+var_dump($test);
+
+$stmt = $conn->prepare($test);
+$stmt->execute();
+
+$playerArray = $_POST["player"];
+
+foreach($playerArray as $player){
+    $nameId = $player["name"];
+    if(!empty($nameId)) {
+        $wonderId = $player["wonder"];
+        $points = $player["points"];
+        $gameId = 5;
+
+        $insert = "INSERT INTO player_game(game_id,player_id,points,wonder_id)
+VALUES ($gameId,$nameId,$points,$wonderId);";
+        echo print_r($insert);
+
+        $insert = $conn->prepare("INSERT INTO player_game(game_id,player_id,points,wonder_id)
+VALUES ($gameId,$nameId,$points,$wonderId)");
+        $insert->execute();
+    }
+}
+
