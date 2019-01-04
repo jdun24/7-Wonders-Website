@@ -1,0 +1,40 @@
+<html>
+<head>
+    <style>
+    body {
+    background-image: url("/web/img/pyra.png");
+    }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+
+<?php
+include("template/menuBar.php");
+
+
+include("model/dataBase.php");
+
+
+$stmt = $conn->prepare("SELECT id,name FROM people");
+$stmt->execute();
+
+$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+$name = $stmt->fetchAll();
+
+//
+
+$wonderStmt = $conn->prepare("SELECT id,name FROM wonder");
+$wonderStmt->execute();
+
+$wondeResult = $wonderStmt->setFetchMode(PDO::FETCH_ASSOC);
+$wonder = $wonderStmt->fetchAll();
+
+
+
+
+
+
+?>
