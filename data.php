@@ -1,0 +1,51 @@
+<?php
+$map = array();
+$img = array();
+
+$map[1] = "junk junction";
+$img[1] = "img/jj.png";
+$map[2] = "lazy links";
+$img[2] = "img/lazylinks.png";
+$map[3] = "risky reels";
+$img[3] = "img/riskyreels.png";
+$map[4] = "haunted hills";
+$img[4] = "img/hauntedhills.png";
+$map[5] = "pleasent park";
+$img[5] = "img/pleasentpark.png";
+$map[6] = "loot lake";
+$img[6] = "img/lootlake.png";
+$map[7] = "tomato town";
+$img[7] = "tomatotown.png";
+$map[8] = "wailing woods";
+$img[8] = "img/wailingwoods.png";
+$map[9] = "snobby shores";
+$img[9] = "img/snobbyshores.png";
+$map[10] = "tilted towers";
+$img[10] = "img/tiltedtowers.png";
+$map[11] = "dusty divot";
+$img[11] = "img/dustydivot.png";
+$map[12] = "retail row";
+$img[12] = "img/retailrow.png";
+$map[13] = "lonely ridge";
+$img[13] = "img/lonelylodge.png";
+$map[14] = "greasy grove";
+$img[14] = "img/greasygrove.png";
+$map[15] = "shifted shafts";
+$img[15] = "img/shiftyshaft.png";
+$map[16] = "salty springs";
+$img[16] = "img/SALTYsprings.png";
+$map[17] = "desert north";
+$img[17] = "img/northdesert.png";
+$map[18] = "paradise palms";
+$img[18] = "img/paradisepalms.png";
+$map[19] = "desert south";
+$img[19] = "img/southdesert.png";
+$map[20] = "fatal feilds";
+$img[20] = "img/ff.png";
+$map[21] = "lucky landing";
+$img[21] = "img/luckylanding.png";
+$map[22] = "flush factory";
+$img[23] = "img/flush factory.png";
+$map[23] = "flush factory north";
+
+?>
